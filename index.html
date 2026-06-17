@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <h1>🎮Epic Media: Movies & Games Arena</h1>
+        <p>Your ultimate destination for honest reviews, ratings, and stats.</p>
+    </header>
+
+    <hr>
+
+    <h2>🔥Featured Reviews (Click to Expand)</h2>
+    <strong>
+        <details>
+            <summary>Review 1: Grand Theft Auto V (Video Game)</summary>
+            <p>An expansive open-world masterpiece that sets the benchmark for modern sandbox games, offering an
+                incredible narrative multi-perspective mechanic alongside a chaotic online playground.</p>
+        </details>
+        <br>
+
+        <details>
+            <summary>Review 2: Interstellar (Sci-Fi Movie)</summary>
+            <p>A visually stunning, emotionally gripping space epic that blends hard science fiction with a deeply
+                touching story about human survival and fatherhood.</p>
+        </details>
+    </strong>
+    <hr>
+
+    <h2>📊Current Ratings & System Stats</h2>
+
+    <h3>User Ratings:</h3>
+
+    <label for="gta-score">GTA V Community Score:</label>
+    <meter id="gta-score" min="0" max="10" value="9.2"></meter>
+    (9.2/10)
+    <br>
+    <br>
+    <label for="interstellar-score">Interstellar IMDb Score:</label>
+    <meter id="interstellar-score" min="0" max="10" value="8.7"></meter>
+    (8.7/10)
+    <br>
+    <br>
+    <br>
+
+    <h3>System Status:</h3>
+
+    <label for="patch-progress">Downloading Next Game Patch:</label>
+    <progress id="patch-progress" max="100" value="75"></progress>
+    (75% Complete)
+    <br>
+    <br>
+    <label for="optimize-progress">Server Optimization Process:</label>
+    <progress id="optimize-progress" max="100" value="30"></progress>
+    (30% Complete)
+    <hr>
+    <br>
+    <form>
+        <h2>🗳️Quick Community Poll</h2>
+        <p>What is your current favorite gaming platform?</p>
+
+        <p class="form-group">
+
+            <label for="gaming-device">Type or Select your Gaming Device:</label>
+            <br>
+            <select id="gaming-device" name="gaming-device">
+                <option value="Nintendo Switch">Nintendo Switch</option>
+                <option value="PC (Steam / Epic)">Pc (Steam / Epic)</option>
+                <option value="PlayStation 5">PlayStation 5</option>
+                <option value="Xbox Series X/S">Xbox Series</option>
+                <option value="Mobile">Mobile</option>
+            </select>
+        </p>
+
+        <p class="form-group">
+            <label for="excitement-level">Rate your gaming setup excitement level:</label>
+            <br>
+            <span class="range-label">Low</span>
+            <input type="range" id="excitement-level" name="excitement-level" min="1" max="10" value="5">
+            <span class="range-label">High</span>
+        </p>
+
+        <input type="submit" value="Cast Vote"></input>
+    </form>
+
+    <hr>
+
+    <p>Created by ICT Students Group Powered by HTML5 Semantic Elements</p>
+
 </body>
+
 </html>
